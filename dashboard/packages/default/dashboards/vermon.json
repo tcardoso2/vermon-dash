@@ -7,15 +7,23 @@
   "layout": {
     "customJS" : ["jquery.peity.js"],
     "widgets" : [
-      {"row" : 1, "col" : 1, "width" : 4, "height" : 2, "widget" : "environment-info", "job" : "environment-info", "config": "environment-info"}
+      {"row" : 1, "col" : 2, "width" : 0, "height" : 0, "job" : "vermon-dep", "config": "vermon-dep"},
+      {"row" : 1, "col" : 1, "width" : 4, "height" : 2, "widget" : "environment-info", "job" : "environment-info", "config": "environment-info"},
+      {"row" : 2, "col" : 1, "width" : 4, "height" : 2, "widget" : "detectors", "job" : "detectors", "config": "detectors"}
     ]
   },
 
   "config" : {
-
+    "vermon-dep": {
+      "interval": 1000
+    },
     "environment-info": {
-      "interval": 60000,
+      "interval": 10000,
       "widgetTitle": "Vermon Environment Info"
+    },
+    "detectors": {
+      "interval": 5000,
+      "widgetTitle": "Vermon Detectors"
     }
   }
 }

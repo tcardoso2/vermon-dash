@@ -1,10 +1,14 @@
 profiles = {
     default: {
       SystemEnvironment: {
-        command: 'echo We Are Vermon!'
+        command: 'echo We Are Vermon!',
+        interval: 300
       },
       MotionDetector: {
         name: 'MD 1'
+      },
+      MotionDetector: {
+        name: 'MD 2'
       },
       BaseNotifier: {
       },

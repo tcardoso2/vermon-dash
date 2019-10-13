@@ -11,8 +11,6 @@
  * }
  */
 
- let vermon = require('vermon');
-
 module.exports = {
 
   /**
@@ -31,13 +29,6 @@ module.exports = {
           res.end('So something useful here');
         });
     */
-    vermon.setLogLevel('info');
-    vermon.configure('config/vermon-config.js');
-    vermon.watch().then((environment) => {
-      dependencies.logger.info(`Watching environment ${environment.name}.`);
-    }).catch((e) => {
-      throw new Error('TODO: Error thrown! Handle with a Job callbak in the future!');
-    });
   },
 
   /**
@@ -95,7 +86,6 @@ module.exports = {
      Have a look at test/environment-info for an example of how to unit tests this easily by mocking easyRequest calls
 
      */
-
-    jobCallback(null, {title: config.widgetTitle, info: vermon.GetEnvironment().getCurrentState()});
+    jobCallback(null, {title: config.widgetTitle, info: dependencies.app.vermon.GetEnvironment().getCurrentState()});
   }
 };

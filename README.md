@@ -1,7 +1,8 @@
 Versions:
 =========
 
-* Next versions: Show Detectors Widget. Show event triggers, run jobcallbacks on those event triggers. Be able to reuse the same vermon instance (singleton), ie. not having to instanciate it in the job, but just reference it.
+* Next versions: ?
+* v 0.1.2: Made vermon a dependency (custom), added Simple Detectors widget (WIP)
 * v 0.1.1: First vermon widget / job - environment info:
   - Prints information on the screen based SystemEnvironment attributes returned (e.g. mem, cpus, ...)
   - configuration file added in Atlasboard config folder (vermon-config.js)
