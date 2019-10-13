@@ -1,0 +1,21 @@
+{
+  "title": "Vermon Dashboard",
+  "titleVisible": false,
+
+  "description": "",
+
+  "layout": {
+    "customJS" : ["jquery.peity.js"],
+    "widgets" : [
+      {"row" : 1, "col" : 1, "width" : 4, "height" : 2, "widget" : "environment-info", "job" : "environment-info", "config": "environment-info"}
+    ]
+  },
+
+  "config" : {
+
+    "environment-info": {
+      "interval": 60000,
+      "widgetTitle": "Vermon Environment Info"
+    }
+  }
+}
