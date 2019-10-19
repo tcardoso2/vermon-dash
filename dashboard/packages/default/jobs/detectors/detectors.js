@@ -29,13 +29,14 @@ module.exports = {
           res.end('So something useful here');
         });
     */
+    console.log("Detector Running!");
     if (!hasRun) {
       hasRun = true;
       var jobWorker = this;
       vermon = dependencies.app.vermon;
       vermon.GetMotionDetectors().forEach((detector) => {
         detector.on('hasDetected', (oldState, newState, env) => {
-          jobWorker.pushUpdate({title: config.widgetTitle, detectors: vermon.GetMotionDetectors()});
+	  jobWorker.pushUpdate({title: config.widgetTitle, detectors: vermon.getDetectors()});
         })
       });  
     }

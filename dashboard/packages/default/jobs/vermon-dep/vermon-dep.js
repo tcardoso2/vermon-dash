@@ -8,7 +8,8 @@
  * Dependencies: This relies on the existance ofr dependencies.app
  */
 
-let vermon = require('vermon');
+let vermon = require('../../../../../../vermon/main');
+//require('vermon');
 
 module.exports = {
 

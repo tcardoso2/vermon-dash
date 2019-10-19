@@ -2,7 +2,8 @@ Versions:
 =========
 
 * Next versions: ?
-* v 0.1.2: Made vermon a dependency (custom), added Simple Detectors widget (WIP)
+* v 0.1.3: Added NodeDetectors Job;
+* v 0.1.2: Made vermon a dependency (custom), added Simple Detectors widget;
 * v 0.1.1: First vermon widget / job - environment info:
   - Prints information on the screen based SystemEnvironment attributes returned (e.g. mem, cpus, ...)
   - configuration file added in Atlasboard config folder (vermon-config.js)

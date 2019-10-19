@@ -7,6 +7,8 @@ widget = {
     if (data.title) {
       $('h2', el).text(data.title);
     }
-    $('.content', el).html(`${data.detectors[0].name}: ${data.detectors[0].currentIntensity.freemem}`);
+    for(let d in data.detectors) {
+      $('.content', el).append(`<div>${data.detectors[d].name}: ${data.detectors[d]["currentIntensity"] ? data.detectors[d].currentIntensity.freemem : 0}</div>`);
+    }
   }
 };
