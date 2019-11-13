@@ -2,6 +2,7 @@ Versions:
 =========
 
 * Next versions: ?
+* v 0.1.4: Formatted properly NodeDetectors;
 * v 0.1.3: Added NodeDetectors Job;
 * v 0.1.2: Made vermon a dependency (custom), added Simple Detectors widget;
 * v 0.1.1: First vermon widget / job - environment info:

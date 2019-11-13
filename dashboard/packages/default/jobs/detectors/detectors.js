@@ -36,7 +36,7 @@ module.exports = {
       vermon = dependencies.app.vermon;
       vermon.GetMotionDetectors().forEach((detector) => {
         detector.on('hasDetected', (oldState, newState, env) => {
-	  jobWorker.pushUpdate({title: config.widgetTitle, detectors: vermon.getDetectors()});
+          jobWorker.pushUpdate({title: config.widgetTitle, detectors: vermon.getDetectors()});
         })
       });  
     }

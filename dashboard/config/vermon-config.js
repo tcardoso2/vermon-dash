@@ -2,11 +2,11 @@ profiles = {
     default: {
       NodeEnvironment: {
         interval: 20000,
-	killAfter: undefined,
-	createDetectors: true 
+      	killAfter: undefined,
+	      createDetectors: true 
       },
       MotionDetector: {
-	name: "MD1"
+	      name: "MD1"
       },
       BaseNotifier: {
       }

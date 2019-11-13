@@ -19,11 +19,11 @@
     },
     "environment-info": {
       "interval": 5000,
-      "widgetTitle": "Vermon Environment Info"
+      "widgetTitle": "System"
     },
     "detectors": {
       "interval": 5000,
-      "widgetTitle": "Vermon Detectors"
+      "widgetTitle": "Network Nodes"
     }
   }
 }

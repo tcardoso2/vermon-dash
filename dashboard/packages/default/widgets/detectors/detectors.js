@@ -7,8 +7,17 @@ widget = {
     if (data.title) {
       $('h2', el).text(data.title);
     }
+    $('.content', el).empty();
     for(let d in data.detectors) {
-      $('.content', el).append(`<div>${data.detectors[d].name}: ${data.detectors[d]["currentIntensity"] ? data.detectors[d].currentIntensity.freemem : 0}</div>`);
+      if(!data.detectors[d].currentIntensity.ip) {
+        continue
+      }
+      $('.content', el).append(`<ul class='detector'>
+        <li>${data.detectors[d].name}</li>
+        <li>${data.detectors[d].currentIntensity.ip}</li>
+        <li>${data.detectors[d].currentIntensity.up}</li>
+        <li>${data.detectors[d].currentIntensity.mac}</li>
+      </ul>`);
     }
   }
 };
