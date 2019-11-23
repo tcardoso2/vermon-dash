@@ -12,12 +12,16 @@ widget = {
       if(!data.detectors[d].currentIntensity.ip) {
         continue
       }
-      $('.content', el).append(`<ul class='detector'>
+      if(data.detectors[d].name) {
+        $('.content', el).append(`<ul class='detector'>
         <li>${data.detectors[d].name}</li>
         <li>${data.detectors[d].currentIntensity.ip}</li>
         <li>${data.detectors[d].currentIntensity.up}</li>
         <li>${data.detectors[d].currentIntensity.mac}</li>
-      </ul>`);
+        </ul>`);
+      } else {
+        $('.content', el).append("<ul class='error'>Error</ul>")
+      }
     }
   }
 };
